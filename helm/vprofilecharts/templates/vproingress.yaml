@@ -4,6 +4,7 @@ metadata:
   name: vpro-ingress
   annotations:
     nginx.ingress.kubernetes.io/use-regex: "true"
+    service.beta.kubernetes.io/aws-load-balancer-region: "us-east-1"
 spec:
   ingressClassName: nginx
   rules:
